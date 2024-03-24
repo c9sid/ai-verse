@@ -16,7 +16,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth no-scrollbar">
+    <html lang="en">
       <head>
       <script src="https://cdn.lordicon.com/lordicon.js"></script>
       </head>
