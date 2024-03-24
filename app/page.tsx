@@ -11,8 +11,8 @@ export default function Home() {
         <h2 className="lg:text-4xl text-3xl font-bold text-slate-500">One of the Best <span className="text-blue-500">AI Learning</span> Free Platform</h2>
         <p className="text-md lg:text-lg text-slate-600">Explore the website to get updated about new and fascinating AI tools.</p>
         <div className="btn space-x-3 pt-5">
-          <Link className="py-1 lg:py-2 px-3 ring-1 ring-blue-700 hover:text-white hover:bg-blue-800 text-blue-700 rounded-md" href={'#trending'}>Explore Now</Link>
-          <Link className="py-1 lg:py-2 px-3 ring-1 bg-blue-700 text-white ring-blue-700 hover:bg-blue-800 rounded-md" href={'/about'}>About Us</Link>
+          <Link className="py-1 lg:py-2 px-3 ring-1 ring-blue-500 hover:text-white hover:bg-blue-600 text-blue-500 rounded-md" href={'#trending'}>Explore Now</Link>
+          <Link className="py-1 lg:py-2 px-3 ring-1 bg-blue-500 text-white ring-blue-500 hover:bg-blue-600 rounded-md" href={'/about'}>About Us</Link>
         </div>
         </div>
         <div className="right grid place-items-center lg:w-2/5">
