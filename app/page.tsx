@@ -35,8 +35,8 @@ export default function Home() {
         <div className="flex overflow-x-scroll no-scrollbar">
         <Card />
         </div>
-      </section>
 
+      </section>
     </>
   );
 }
