@@ -8,7 +8,7 @@ export default function Home() {
     <>
       <section className="container py-10 px-5 lg:py-0 lg:px-0 md:h-[90vh] w-full lg:flex md:block justify-center items-center">
         <div className="left text-center space-y-5 w-full lg:w-3/5">
-        <h2 className="lg:text-4xl text-3xl font-bold text-slate-500">World's Best <span className="text-blue-500">AI Learning</span> Free Platform</h2>
+        <h2 className="lg:text-4xl text-3xl font-bold text-slate-500">One of the Best <span className="text-blue-500">AI Learning</span> Free Platform</h2>
         <p className="text-md lg:text-lg text-slate-600">Explore the website to get updated about new and fascinating AI tools.</p>
         <div className="btn space-x-3 pt-5">
           <Link className="py-1 lg:py-2 px-3 ring-1 ring-blue-700 hover:text-white hover:bg-blue-800 text-blue-700 rounded-md" href={'#trending'}>Explore Now</Link>
