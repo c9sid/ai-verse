@@ -15,15 +15,16 @@ const Navbar = () => {
     {/* Desktop navbar */}
     <nav id='navbar' className='hidden bg-slate-950/60 backdrop-blur-sm sticky top-0 md:flex justify-between items-center px-5 py-5 z-10'>
       <div className="logo">
-        <Link href={'/'} className='text-2xl font-semibold text-blue-700'>AI verse</Link>
+        <Link href={'/'} className='text-2xl font-semibold text-blue-500'>AI verse</Link>
       </div>
       <div className="menu">
         <ul className='flex justify-between items-center gap-x-5'>
-          <li className='text-slate-300 transition duration-200 hover:text-blue-700'><Link href={'/'}>Home</Link></li>
-          <li className='text-slate-300 transition duration-200 hover:text-blue-700'><Link href={'/products'}>Products</Link></li>
-          <li className='text-slate-300 transition duration-200 hover:text-blue-700'><Link href={'/text-to-voice'}>Text to voice</Link></li>
-          <li className='text-slate-300 transition duration-200 hover:text-blue-700'><Link href={'/about'}>About</Link></li>
-          <li className='text-slate-300 transition duration-200 hover:text-blue-700'><Link href={'/contact'}>Contact</Link></li>
+          <li className='text-slate-300 transition duration-200 hover:text-blue-500'><Link href={'/'}>Home</Link></li>
+          <li className='text-slate-300 transition duration-200 hover:text-blue-500'><Link href={'/text-to-image'}>Image Generator</Link></li>
+          <li className='text-slate-300 transition duration-200 hover:text-blue-500'><Link href={'/text-to-voice'}>Voice Generator</Link></li>
+          <li className='text-slate-300 transition duration-200 hover:text-blue-500'><Link href={'/text-to-voice'}>Video Generator</Link></li>
+          <li className='text-slate-300 transition duration-200 hover:text-blue-500'><Link href={'/about'}>About</Link></li>
+          <li className='text-slate-300 transition duration-200 hover:text-blue-500'><Link href={'/contact'}>Contact</Link></li>
         </ul>
       </div>
     </nav>
@@ -31,7 +32,7 @@ const Navbar = () => {
     {/* Mobile Navbar */}
     <nav id='navbar' className='flex md:hidden bg-slate-950/60 backdrop-blur-sm sticky top-0 justify-between items-center px-5 py-3 lg:hidden sm:flex z-10'>
     <div>
-      <Link href={'/'} className='text-xl font-semibold text-blue-700'>AI verse</Link>
+      <Link href={'/'} className='text-xl font-semibold text-blue-500'>AI verse</Link>
     </div> 
     <button onClick={() => setNavbar(!navbar)}>
     {navbar ? (<AiOutlineClose className='text-white' />) : (<CiMenuFries className='text-lg text-white' />)}
@@ -42,22 +43,23 @@ const Navbar = () => {
 className={`${navbar ? '' : 'hidden'}`}
 >
   <div className='flex justify-center items-start'>
-    <div className='h-auto fixed md:hidden w-11/12 py-5 bg-slate-800 shadow-md rounded-md z-10'>
-      <ul className='space-y-2 text-center pb-3'>
-        <li className='hover:bg-gray-200 text-sm mx-2 rounded text-slate-300 hover:text-black py-1'>
+    <div className='h-[90vh] fixed md:hidden w-11/12 bg-slate-900 shadow-md rounded-md z-10'>
+      <ul className='space-y-3 p-8 text-center'>
+        <li className='hover:bg-gray-200 text-md  rounded text-slate-300 hover:text-black py-1'>
           <Link onClick={() => setNavbar(!navbar)} href={'/'}>Home</Link></li>
-        <li className='hover:bg-gray-200 text-sm mx-2 rounded text-slate-300 hover:text-black py-1'>
-          <Link onClick={() => setNavbar(!navbar)} href={'/products'}>Products</Link></li>
-        <li className='hover:bg-gray-200 text-sm mx-2 rounded text-slate-300 hover:text-black py-1'>
-          <Link onClick={() => setNavbar(!navbar)} href={'/text-to-voice'}>Text to voice</Link></li>
-        <li className='hover:bg-gray-200 text-sm mx-2 rounded text-slate-300 hover:text-black py-1'>
+        <li className='hover:bg-gray-200 text-md  rounded text-slate-300 hover:text-black py-1'>
+          <Link onClick={() => setNavbar(!navbar)} href={'/text-to-image'}>Image Generator</Link></li>
+        <li className='hover:bg-gray-200 text-md  rounded text-slate-300 hover:text-black py-1'>
+          <Link onClick={() => setNavbar(!navbar)} href={'/text-to-voice'}>Voice Generator</Link></li>
+          <li className='hover:bg-gray-200 text-md  rounded text-slate-300 hover:text-black py-1'>
+          <Link onClick={() => setNavbar(!navbar)} href={'/text-to-video'}>Video Generator</Link></li>
+        <li className='hover:bg-gray-200 text-md  rounded text-slate-300 hover:text-black py-1'>
           <Link onClick={() => setNavbar(!navbar)} href={'/about'}>About</Link></li>
-        <li className='hover:bg-gray-200 text-sm mx-2 rounded text-slate-300 hover:text-black py-1'>
+        <li className='hover:bg-gray-200 text-md  rounded text-slate-300 hover:text-black py-1'>
           <Link onClick={() => setNavbar(!navbar)} href={'/contact'}>Contact</Link></li>
       </ul>
-      <hr />
-      <div className='flex justify-center items-center pt-3'>
-        <Link onClick={() => setNavbar(!navbar)} href={'/'} className='bg-blue-700 text-sm text-white hover:bg-blue-800 py-1 rounded-md w-11/12 text-center'>Sign Up</Link>
+      <div className='flex justify-center items-center px-3'>
+        <Link onClick={() => setNavbar(!navbar)} href={'/'} className='bg-blue-500 text-md text-white hover:bg-blue-600 py-1 rounded-md w-11/12 text-center'>Sign Up</Link>
       </div>
     </div>
   </div>
