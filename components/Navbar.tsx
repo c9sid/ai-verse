@@ -20,9 +20,9 @@ const Navbar = () => {
       <div className="menu">
         <ul className='flex justify-between items-center gap-x-5'>
           <li className='text-slate-300 transition duration-200 hover:text-blue-500'><Link href={'/'}>Home</Link></li>
-          <li className='text-slate-300 transition duration-200 hover:text-blue-500'><Link href={'/text-to-image'}>Image Generator</Link></li>
-          <li className='text-slate-300 transition duration-200 hover:text-blue-500'><Link href={'/text-to-voice'}>Voice Generator</Link></li>
-          <li className='text-slate-300 transition duration-200 hover:text-blue-500'><Link href={'/text-to-voice'}>Video Generator</Link></li>
+          <li className='text-slate-300 transition duration-200 hover:text-blue-500'><Link href={'/image-generator'}>Image Generator</Link></li>
+          <li className='text-slate-300 transition duration-200 hover:text-blue-500'><Link href={'/voice-generator'}>Voice Generator</Link></li>
+          <li className='text-slate-300 transition duration-200 hover:text-blue-500'><Link href={'/video-generator'}>Video Generator</Link></li>
           <li className='text-slate-300 transition duration-200 hover:text-blue-500'><Link href={'/about'}>About</Link></li>
           <li className='text-slate-300 transition duration-200 hover:text-blue-500'><Link href={'/contact'}>Contact</Link></li>
         </ul>
@@ -48,11 +48,11 @@ className={`${navbar ? '' : 'hidden'}`}
         <li className='hover:bg-gray-200 text-md  rounded text-slate-300 hover:text-black py-1'>
           <Link onClick={() => setNavbar(!navbar)} href={'/'}>Home</Link></li>
         <li className='hover:bg-gray-200 text-md  rounded text-slate-300 hover:text-black py-1'>
-          <Link onClick={() => setNavbar(!navbar)} href={'/text-to-image'}>Image Generator</Link></li>
+          <Link onClick={() => setNavbar(!navbar)} href={'/image-generator'}>Image Generator</Link></li>
         <li className='hover:bg-gray-200 text-md  rounded text-slate-300 hover:text-black py-1'>
-          <Link onClick={() => setNavbar(!navbar)} href={'/text-to-voice'}>Voice Generator</Link></li>
+          <Link onClick={() => setNavbar(!navbar)} href={'/voice-generator'}>Voice Generator</Link></li>
           <li className='hover:bg-gray-200 text-md  rounded text-slate-300 hover:text-black py-1'>
-          <Link onClick={() => setNavbar(!navbar)} href={'/text-to-video'}>Video Generator</Link></li>
+          <Link onClick={() => setNavbar(!navbar)} href={'/video-generator'}>Video Generator</Link></li>
         <li className='hover:bg-gray-200 text-md  rounded text-slate-300 hover:text-black py-1'>
           <Link onClick={() => setNavbar(!navbar)} href={'/about'}>About</Link></li>
         <li className='hover:bg-gray-200 text-md  rounded text-slate-300 hover:text-black py-1'>
