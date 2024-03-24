@@ -43,7 +43,7 @@ const Navbar = () => {
 className={`${navbar ? '' : 'hidden'}`}
 >
   <div className='flex justify-center items-start'>
-    <div className='h-[90vh] fixed md:hidden w-11/12 bg-slate-900 shadow-md rounded-md z-10'>
+    <div className='h-[80vh] fixed md:hidden w-11/12 bg-slate-900 shadow-md rounded-md z-10'>
       <ul className='space-y-3 p-8 text-center'>
         <li className='hover:bg-gray-200 text-md  rounded text-slate-300 hover:text-black py-1'>
           <Link onClick={() => setNavbar(!navbar)} href={'/'}>Home</Link></li>
