@@ -7,7 +7,7 @@ export async function FormSubmit (prevState: any ,event: FormEvent<HTMLFormEleme
   event.preventDefault();
 
   const formData = new FormData(event.currentTarget)
-  const res = await fetch('https://ai-verse-next.netlify.app/api/contact',{
+  const res = await fetch('http://localhost:3000/api/contact',{
     method: "POST",
     body: formData,
   })
