@@ -18,6 +18,6 @@ export async function POST(req: any) {
             message: "Message sent successfully", success: true,
         })
     } catch (error) {
-        return NextResponse.json({message: "Can't spam messages"});
+        return NextResponse.json({message: "Unable to send message"});
     }
 }

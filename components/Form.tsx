@@ -1,12 +1,9 @@
 "use client"
 
 import { useFormState } from "react-dom";
-import { FormEvent } from "react";
  
-export async function FormSubmit (prevState: any ,event: FormEvent<HTMLFormElement>) {
-  event.preventDefault();
+export async function FormSubmit (prevState: any ,formData: any) {
 
-  const formData = new FormData(event.currentTarget)
   const res = await fetch('https://ai-verse-next.netlify.app/api/contact',{
     method: "POST",
     body: formData,
@@ -22,9 +19,9 @@ const Form = () => {
     <>
     <div className='flex flex-col justify-center items-center h-[80vh]'>
       <h2 className='text-center text-xl py-5 font-bold text-emerald-500'>Contact Us</h2>
-      <form className='flex flex-col gap-2 w-fit p-10 rounded-md bg-slate-900' onSubmit={FormAction}>
+      <form className='flex flex-col gap-2 w-fit p-10 rounded-md bg-slate-900' action={FormAction}>
 
-      <div className={`${"error text-blue-500 text-center"}`}>
+      <div className={`${"error text-emerald-500 text-center"}`}>
       {state.message}
       </div>
 
