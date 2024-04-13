@@ -4,7 +4,7 @@ import { useFormState } from "react-dom";
  
 export async function FormSubmit (prevState: any ,formData: any) {
 
-  const res = await fetch('http://localhost:3000/api/contact',{
+  const res = await fetch('https://ai-verse-next.netlify.app/api/contact',{
     method: "POST",
     body: formData,
   })
