@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import React from 'react'
 import toast from 'react-hot-toast'
+import { FaInstagram } from 'react-icons/fa'
 
 const Footer = () => {
 
@@ -11,7 +12,7 @@ const Footer = () => {
       <div
         className={`${
           t.visible ? 'animate-enter' : 'animate-leave'
-        } max-w-md w-full bg-slate-900 shadow-lg rounded-lg pointer-events-auto flex ring-1 ring-white ring-opacity-5`}
+        } max-w-md w-full bg-white shadow-lg rounded-lg pointer-events-auto flex ring-1 ring-black ring-opacity-5`}
       >
         <div className="flex-1 w-0 p-4">
           <div className="flex items-start">
@@ -23,7 +24,7 @@ const Footer = () => {
               />
             </div>
             <div className="ml-3 flex-1">
-              <p className="text-sm font-medium text-slate-50">
+              <p className="text-sm font-medium text-slate-950">
                 Siddharth Kumar
               </p>
               <p className="mt-1 text-sm text-gray-500">
@@ -32,12 +33,12 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="flex border-l border-slate-500">
+        <div className="flex border-l border-slate-300">
           <Link
             href={'https://www.instagram.com/_s_i_d._d_h_a_r_t_h_/'} target='_blank'
-            className="w-full border border-transparent rounded-none rounded-r-lg p-4 flex items-center justify-center text-sm font-medium text-indigo-300 hover:text-indigo-400 focus:outline-none"
+            className="w-full border border-transparent rounded-none rounded-r-lg p-4 flex items-center gap-1 justify-center text-sm font-medium text-red-500 hover:text-red-600 focus:outline-none"
           >
-            Contact
+            Contact <FaInstagram />
           </Link>
         </div>
       </div>

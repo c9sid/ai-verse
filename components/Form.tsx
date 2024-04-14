@@ -17,11 +17,11 @@ const Form = () => {
  
   return (
     <>
-    <div className='flex flex-col justify-center items-center h-[80vh]'>
+    <div className='flex flex-col justify-center items-center'>
       <h2 className='text-center text-xl py-5 font-bold text-emerald-500'>Contact Us</h2>
       <form className='flex flex-col gap-2 w-fit p-10 rounded-md bg-slate-900' action={FormAction}>
 
-      <div className={`${"error text-emerald-500 text-center"}`}>
+      <div className={`${"error text-red-500 text-center"}`}>
       {state.message}
       </div>
 
