@@ -3,16 +3,11 @@ import connectDB from "@/app/lib/mongodb"
 import { NextResponse } from "next/server"
 
 export async function POST(req: any) {
-    let res = {message: "Invalid Request"}
-    const data = await req.formData()
-    const fullname = data.get('fullname')
-    const email = data.get('email')
-    const message = data.get('message')
-
+    const data = await req.formData();
 
     try {
         await connectDB();
-        await Contact.create({fullname, email, message})
+        await Contact.create({data})
 
         return NextResponse.json({
             message: "Message sent successfully", success: true,
