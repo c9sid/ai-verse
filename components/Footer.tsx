@@ -1,5 +1,6 @@
 "use client"
 
+import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import toast from 'react-hot-toast'
@@ -17,11 +18,7 @@ const Footer = () => {
         <div className="flex-1 w-0 p-4">
           <div className="flex items-start">
             <div className="flex-shrink-0 pt-0.5">
-              <img
-                className="h-10 w-10 rounded-full"
-                src="https://scontent.fdel1-7.fna.fbcdn.net/v/t39.30808-1/257931970_1284835348659265_6873558641129840690_n.jpg?stp=dst-jpg_p320x320&_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_ohc=kKcvHfZxg_YAb6c9YQV&_nc_ht=scontent.fdel1-7.fna&oh=00_AfDoQd4RjerdhFKjJHpB10k2JqWWtt4YZ3QUH7DD61l-dA&oe=662215CA"
-                alt="sid"
-              />
+              <Image className='rounded-full' alt='developer' width={42} height={42} src={'/devloper/siddharth.jpeg'} />
             </div>
             <div className="ml-3 flex-1">
               <p className="text-sm font-medium text-slate-950">
