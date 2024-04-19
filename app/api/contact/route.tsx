@@ -1,18 +1,16 @@
-import Contact from "@/app/lib/model"
-import connectDB from "@/app/lib/mongodb"
+import Contact from "@/lib/model"
+import connectDB from "@/lib/mongodb"
 import { NextResponse } from "next/server"
 
-export async function POST(req: any) {
-    const data = await req.formData();
-
+export async function POST(request : Request) {
+    
     try {
+        const data = await request.json();
         await connectDB();
-        await Contact.create({data})
+        const newpost = await Contact.create({data})
 
-        return NextResponse.json({
-            message: "Message sent successfully", success: true,
-        })
+        return NextResponse.json(newpost)
     } catch (error) {
-        return NextResponse.json({message: "Unable to send message"});
+        return NextResponse.json({message: "Unable to send message"}, {status: 500});
     }
 }

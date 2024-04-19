@@ -36,17 +36,6 @@ export default function Home() {
         <Card />
         </div>
       </section>
-
-      {/* <section className="h-screen px-5" id="trending">
-        <div className="flex items-center gap-x-1 pt-14 pb-5">
-        <div><h2 className="text-2xl text-red-500 font-semibold">Image Generator</h2></div>
-        <div className="text-2xl text-red-500 font-semibold"><FaHotjar /></div>
-        </div>
-
-        <div className="flex overflow-x-scroll no-scrollbar">
-        <Card />
-        </div>
-      </section> */}
     </>
   );
 }

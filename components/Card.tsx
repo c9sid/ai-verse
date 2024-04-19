@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import cardData from '@/app/lib/data'
+import { cardData } from '@/lib/data'
 
 const Card = () => {
   return (
