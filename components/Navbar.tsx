@@ -24,8 +24,8 @@ const Navbar = () => {
         { navLinks.map((link) => {
           const isActive = pathname.endsWith(link.href);
           return(
-            <div className="menu">
-            <ul key={link.name} className='flex justify-between items-center gap-x-5'>
+            <div key={link.name} className="menu">
+            <ul className='flex justify-between items-center gap-x-5'>
           <li className={isActive ? "text-blue-500 transition duration-200" : "text-white transition duration-200"}><Link href={link.href}>{link.name}</Link></li>
         </ul>
       </div>
