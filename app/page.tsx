@@ -8,8 +8,8 @@ export default function Home() {
     <>
       <section className="container py-10 px-5 lg:py-0 lg:px-0 md:h-[90vh] w-full lg:flex md:block justify-center items-center">
         <div className="left text-center space-y-5 w-full lg:w-3/5">
-        <h2 className="lg:text-4xl text-3xl font-bold text-zinc-500">One of the Best <span className="bg-gradient-to-r from-[#103ce7] to-[#64e9ff] bg-clip-text text-transparent">AI Learning</span> Free Platform</h2>
-        <p className="text-md lg:text-lg text-zinc-600">Explore the website to get updated about new and fascinating AI tools.</p>
+        <h2 className="lg:text-4xl text-3xl font-bold text-slate-400">One of the Best <span className="bg-gradient-to-r from-[#103ce7] to-[#64e9ff] bg-clip-text text-transparent">AI Learning</span> Free Platform</h2>
+        <p className="text-md lg:text-lg text-slate-500">Explore the website to get updated about new and fascinating AI tools.</p>
         <div className="btn text-sm space-x-3 pt-5">
           <Link className="py-2 px-4 ring-1 ring-blue-500 hover:ring-blue-600 hover:text-white hover:bg-blue-600 text-blue-500 rounded-md" href={'#trending'}>Explore Now</Link>
           <Link className="py-2 px-4 ring-1 bg-blue-500 text-white ring-blue-500 hover:bg-blue-600 rounded-md" href={'/about'}>About Us</Link>
