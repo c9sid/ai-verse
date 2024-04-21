@@ -18,7 +18,7 @@ const Form = () => {
   return (
     <>
     <div className='flex flex-col justify-center items-center'>
-      <h2 className='text-center text-xl py-5 font-bold bg-gradient-to-r from-emerald-500 to-green-300 bg-clip-text text-transparent'>Contact Us</h2>
+      <h2 className='text-center text-xl py-5 font-bold bg-gradient-to-r from-[#7AFFD7] to-[#00FFB2] bg-clip-text text-transparent'>Contact Us</h2>
       <form className='flex flex-col gap-2 w-fit p-10 rounded-md bg-slate-900' action={FormAction}>
 
       <div className={`${"error text-red-500 text-center"}`}>

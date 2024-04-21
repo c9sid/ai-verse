@@ -28,8 +28,8 @@ export default function Home() {
 
       <section className="h-screen px-5" id="trending">
         <div className="flex items-center gap-x-1 pt-14 pb-5">
-        <div><h2 className="text-2xl bg-gradient-to-r from-red-500 to-orange-500 bg-clip-text text-transparent font-semibold">Trending Now</h2></div>
-        <div className="text-2xl text-orange-500 font-semibold"><FaHotjar /></div>
+        <div><h2 className="text-2xl bg-gradient-to-r from-[#ff7170] to-[#ffe57f] bg-clip-text text-transparent font-semibold">Trending Now</h2></div>
+        <div className="text-2xl text-[#ffe57f] font-semibold"><FaHotjar /></div>
         </div>
 
         <div className="flex overflow-x-scroll no-scrollbar">
