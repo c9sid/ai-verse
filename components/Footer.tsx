@@ -44,7 +44,7 @@ const Footer = () => {
 
   return (
     <div className='flex items-center justify-center'>
-        <button type="button" onClick={handleClick} className="text-zinc-500 hover:text-zinc-950 p-4">@About developer</button>
+        <button type="button" onClick={handleClick} className="text-blue-300 p-4">@About developer</button>
     </div>
   )
 }
