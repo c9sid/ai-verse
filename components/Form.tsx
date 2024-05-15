@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react"
+import toast from "react-hot-toast";
 
 const Form = () => {
   const [fullname, setFullname] = useState('');
@@ -32,6 +33,13 @@ const Form = () => {
       setFullname('');
       setEmail('');
       setMessage('');
+      msg.forEach((message: any) => {
+        toast.success(String(message));
+      });
+    } else{
+      msg.forEach((message: any) => {
+        toast.error(String(message));
+      });
     }
   };
  
@@ -41,7 +49,7 @@ const Form = () => {
       <h2 className='text-center text-xl py-5 font-bold bg-gradient-to-r from-[#7AFFD7] to-[#00FFB2] bg-clip-text text-transparent'>Contact Us</h2>
       <form onSubmit={handleSubmit} className='flex flex-col gap-2 w-fit p-10 rounded-md bg-slate-900'>
 
-      {error &&
+      {/* {error &&
           error.map((e, index) => (
             <div
               key={index}
@@ -51,7 +59,7 @@ const Form = () => {
             >
               {e}
             </div>
-          ))}
+          ))} */}
 
         <label htmlFor="name" className='w-64 text-start text-slate-300'>Your Name</label>
         <input className='w-64 p-2 bg-slate-50 outline-none ring-1 ring-slate-700 text-slate-950 rounded-md' onChange={(e) => setFullname(e.target.value)} value={fullname} placeholder="Enter full name" name="fullname" type="text" autoFocus />
