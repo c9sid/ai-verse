@@ -59,9 +59,9 @@ className={`${navbar ? '' : 'hidden'}`}
           )
         })}
       </ul>
-      <div className='flex justify-center items-center px-3'>
+      {/* <div className='flex justify-center items-center px-3'>
         <Link onClick={() => setNavbar(!navbar)} href={'/'} className='bg-slate-950 text-md text-slate-300 hover:bg-slate-700 py-2 px-4 w-11/12 rounded-md text-center'>Sign Up</Link>
-      </div>
+      </div> */}
     </div>
   </div>
   </div>

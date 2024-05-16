@@ -86,22 +86,22 @@ export const navLinks = [
         name: "Home",
         href: "/"
     },
-    {
-        name: "Image Generator",
-        href: "/image-generator"
-    },
-    {
-        name: "Voice Generator",
-        href: "/voice-generator"
-    },
-    {
-        name: "Video Generator",
-        href: "/video-generator"
-    },
-    {
-        name: "About",
-        href: "/about"
-    },
+    // {
+    //     name: "Image Generator",
+    //     href: "/image-generator"
+    // },
+    // {
+    //     name: "Voice Generator",
+    //     href: "/voice-generator"
+    // },
+    // {
+    //     name: "Video Generator",
+    //     href: "/video-generator"
+    // },
+    // {
+    //     name: "About",
+    //     href: "/about"
+    // },
     {
         name: "Contact",
         href: "/contact"
