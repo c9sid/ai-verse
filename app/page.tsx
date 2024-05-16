@@ -12,7 +12,7 @@ export default function Home() {
         <p className="text-md lg:text-lg text-slate-500">Explore the website to get updated about new and fascinating AI tools.</p>
         <div className="btn text-sm space-x-3 pt-5">
           <Link className="py-2 px-4 ring-1 ring-blue-500 hover:ring-blue-600 hover:text-white hover:bg-blue-600 text-blue-500 rounded-md" href={'#trending'}>Explore Now</Link>
-          <Link className="py-2 px-4 ring-1 bg-blue-500 text-white ring-blue-500 hover:bg-blue-600 rounded-md" href={'/about'}>About Us</Link>
+          <Link className="py-2 px-4 ring-1 bg-blue-500 text-white ring-blue-500 hover:bg-blue-600 rounded-md" href={'/contact'}>Contact</Link>
         </div>
         </div>
         <div className="right grid place-items-center lg:w-2/5">
